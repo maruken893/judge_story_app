@@ -7,7 +7,6 @@ from .get_review_func import get_reviews, get_reviews_imp
 from .tool.main_func import scoreing
 from .get_game_name import get_game_name
 from .get_id_f_url import get_id
-import requests
 
 class HelloView(View):
     def get(self, request, *args, **kwargs):
