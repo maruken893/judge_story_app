@@ -1,0 +1,45 @@
+{% extends '_base.html' %}
+
+
+{% block content %}
+<div class="container">
+  <div class="jumbotron">
+    <h2>{{ title }}のストーリーの評価</h2>
+<br>
+
+    <h3>positive review </h3>
+    <p>{{ positive_score }}</p>
+    <h3>neutral review </h3>
+    <p>{{ neutral_score }}</p>
+    <h3>negative review </h3>
+    <p>{{ negative_score }}</p>
+    <h3>STAR</h3>
+    {% if star == '評価がありません' %}
+      <p>{{ star }}</p>
+    {% elif  star  < 0.5 %}
+      <p><span class="star5_rating" data-rate="0"></span> 星{{ star }}</p>
+    {% elif star < 1.0 %}
+      <p><span class="star5_rating" data-rate="0.5"></span> 星{{ star }}</p>
+    {% elif star < 1.5 %}
+      <p><span class="star5_rating" data-rate="1"></span> 星{{ star }}</p>
+    {% elif star < 2.0 %}
+      <p><span class="star5_rating" data-rate="1.5"></span> 星{{ star }}</p>
+    {% elif star < 2.5 %}
+      <p><span class="star5_rating" data-rate="2"></span> 星{{ star }}</p>
+    {% elif star < 3.0 %}
+      <p><span class="star5_rating" data-rate="2.5"></span> 星{{ star }}</p>
+    {% elif star < 3.5 %}
+      <p><span class="star5_rating" data-rate="3"></span> 星{{ star }}</p>
+    {% elif star < 4.0 %}
+        <p><span class="star5_rating" data-rate="3.5"></span> 星{{ star }}</p>
+    {% elif star < 4.5 %}
+        <p><span class="star5_rating" data-rate="4"></span> 星{{ star }}</p>
+    {% elif star < 5.0 %}
+      <p><span class="star5_rating" data-rate="4.5"></span> 星{{star}}</p>
+    {% else %}
+    <p><span class="star5_rating" data-rate="5.0"></span> 星{{star}}</p>
+    {% endif %}
+    <a href="{% url 'hello' %}">戻る</a>
+  </div>
+</div>
+{% endblock content %}

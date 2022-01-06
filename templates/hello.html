@@ -1,0 +1,19 @@
+{% extends '_base.html' %}
+{% block content %}
+<div class="container">
+  <div class="jumbotron">
+    <h2>ストーリーのオススメ度診断</h2>
+    <form action="/result" method="post">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="url">SteamのゲームURL</label>
+        <input class="form-control" type="text" id="url" name="url" placeholder="Enter Game URL">
+      </div>
+      <input class="btn btn-primary" type="submit" value="判定する">
+    </form>
+  </div>
+</div>
+{% endblock content %}
+
+
+
