@@ -45,7 +45,6 @@ class ResultView(View):
             star = '評価がありません'
         else:
             star = round(5 * (positive_score / (positive_score + negative_score)), 1)
-        print(star)
 
         context = {
             'id': id,
@@ -59,7 +58,7 @@ class ResultView(View):
         return render(request, 'result.html', context)
 
 
-class HomePageView(TemplateView):
-    template_name = 'home.html'
+# class HomePageView(TemplateView):
+#     template_name = 'home.html'
 
 
