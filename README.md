@@ -1,5 +1,5 @@
 # judge_story_app
-judge_story_appはその名の通り、steam上に存在するゲームのストーリーの評価をレビューから推測するアプリケーションです。
+judge_story_appはsteam上に存在するゲームのストーリーの評価をレビューから推測するアプリケーションです。
 使い方は、steamのゲームのURLを入力し、判定ボタンを押し、しばらく待つだけです。
 レビューの取得にはSteam APIを用いて、入力されたURLのゲームから情報を取得しています。
 <img width="823" alt="スクリーンショット 2023-02-06 11 59 43" src="https://user-images.githubusercontent.com/97023705/216873625-3fb3d7cf-5509-49cf-b118-3c747d85b7d8.png">
