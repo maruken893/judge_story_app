@@ -17,6 +17,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -59,8 +60,11 @@ TEMPLATES = [
 ]
 
 #STATIC URL
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
+# STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
+
+
 
 
 WSGI_APPLICATION = 'config.wsgi.application'
