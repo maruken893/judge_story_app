@@ -12,7 +12,7 @@ services:
     env: python
     region: singapore
     buildCommand: './build.sh'
-    startCommand: 'gunicorn judge_story_app.wsgi:application'
+    startCommand: 'gunicorn wsgi:application'
     plan: free
     branch: main
     healthCheckPath: /
