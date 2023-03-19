@@ -1,3 +1,11 @@
+databases:
+  - name: steam_review_app_db
+    region: singapore
+    plan: free
+    databaseName: django_render_db
+    user: django_user
+
+
 services:
   - type: web
     name: steam_review_app
