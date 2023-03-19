@@ -19,3 +19,4 @@ spacy
 mecab-python3
 unidic-lite
 gunicorn
+mysite
