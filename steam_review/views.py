@@ -1,6 +1,6 @@
 from django.views.generic import TemplateView
 from django.views import View
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 import pandas as pd
 
 from .get_review_func import get_reviews, get_reviews_imp
